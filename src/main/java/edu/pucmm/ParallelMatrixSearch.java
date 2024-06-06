@@ -13,6 +13,7 @@ public class ParallelMatrixSearch {
     private static final int THREAD_COUNT = 4;
     private static final int[][] matrix = new int[MATRIX_SIZE][MATRIX_SIZE];
     private static final int TARGET = 256; // Número a buscar
+    private static final AtomicBoolean found = new AtomicBoolean(false);
 
     public static void main(String[] args) {
         // Inicializar la matriz con valores aleatorios
